@@ -205,7 +205,6 @@ end
 local function createlight(staff, target, pos)
     local light = SpawnPrefab("stafflight")
     light.Transform:SetPosition(pos.x, pos.y, pos.z)
-    staff.components.finiteuses:Use(1)
 
     local caster = staff.components.inventoryitem.owner
     if caster and caster.components.sanity then
